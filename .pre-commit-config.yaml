@@ -21,7 +21,5 @@ repos:
     rev: v1.8.0
     hooks:
       - id: mypy
-        files: ^sessak/
-        exclude: pyproject.toml
-        args: [--strict, --ignore-missing-imports, --disallow-subclassing-any]
+        args: [--strict, --ignore-missing-imports, --disallow-subclassing-any, --config-file=pyproject.toml]
         additional_dependencies: [pydantic]
