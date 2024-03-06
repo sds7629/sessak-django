@@ -22,4 +22,4 @@ repos:
     hooks:
       - id: mypy
         args: [--strict, --ignore-missing-imports, --disallow-subclassing-any, --config-file=pyproject.toml]
-        additional_dependencies: [pydantic]
+        additional_dependencies: [django-stubs, pydantic, environ]
