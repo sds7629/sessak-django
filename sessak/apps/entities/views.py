@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from typing import Any
 
-# Create your views here.
+from rest_framework.views import APIView
+
+
+class UserList(APIView):  # type:ignore
+    def get(self) -> None: ...
