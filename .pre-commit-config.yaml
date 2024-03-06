@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/PyCQA/isort
+    rev: stable
+    hooks:
+      - id: isort
+        exclude: ^.*\b(migrations)\b.*$
+
+  - repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+      - id: black
+        exclude: ^.*\b(migrations)\b.*$
+
+  - repo: https://github.com/pycqa/flake8
+    rev: stable
+    hooks:
+      - id: flake8
+        exclude: '^.*\b(migrations|airbnb_dummy.py|airbnb_sql.py)\b.*$'
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: stable
+    hooks:
+      - id: mypy
+        args: [--strict, --ignore-missing-imports]
+        additional_dependencies: [pydantic]

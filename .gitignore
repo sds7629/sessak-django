@@ -1,7 +1,6 @@
 migrations/
 .env
 .gitignore
-.pre-commit-config.yaml
 tests.sh
 db.sqlite3
 poetry.lock
