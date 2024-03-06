@@ -37,7 +37,7 @@ module = "settings"
 ignore_errors = true
 
 [tool.django-stubs]
-django_settings_module = "sessak.config.settings"
+django_settings_module = "sessak.settings"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.2.0"
