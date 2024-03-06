@@ -22,5 +22,6 @@ repos:
     hooks:
       - id: mypy
         files: ^sessak/
+        exclude: pyproject.toml
         args: [--strict, --ignore-missing-imports, --disallow-subclassing-any]
         additional_dependencies: [pydantic]
