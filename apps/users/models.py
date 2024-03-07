@@ -41,13 +41,14 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    objects = UserManager()
 
-    name = models.CharField(max_length=10)
+    name = models.CharField(max_length=20, null=False, blank=False)
     email = models.EmailField(verbose_name="email address", unique=True, max_length=50)
     age = models.IntegerField()
     is_active = models.BooleanField(default=True)
     is_superuser = models.BooleanField(default=False)
+
+    objects = UserManager()
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["name", "age"]
