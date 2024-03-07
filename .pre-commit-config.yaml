@@ -21,5 +21,5 @@ repos:
     rev: v1.8.0
     hooks:
       - id: mypy
-        args: [--no-strict-optional, --ignore-missing-imports,  --config-file=pyproject.toml, --disallow-subclassing-any]
+        args: [--config-file=pyproject.toml]
         additional_dependencies: [django-stubs, pydantic, django-environ]
