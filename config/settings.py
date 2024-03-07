@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS: list[str] = []
 
-
+AUTH_USER_MODEL = "users.User"
 # Application definition
 
 INSTALLED_APPS = [
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Asia/Seoul"
 
 USE_I18N = True
 

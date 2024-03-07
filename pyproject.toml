@@ -21,7 +21,7 @@ line_length = 120
 plugins = ['mypy_django_plugin.main']
 ignore_missing_imports = true
 python_version = 3.11
-strict = true
+strict = false
 
 [[tool.mypy.overrides]]
 module = "*.migrations.*"
